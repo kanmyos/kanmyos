@@ -1,17 +1,16 @@
 <h1 align="center">Hello, I am Juan Pablo Torres</h1>
-
 <br />
 <p align="center">
-  <a href="https://github.com/Bouaskaoun">
+  <a href="https://kanmyos.github.io/">
     <img
-      src="https://readme-typing-svg.herokuapp.com?lines=Senior+Web+Developer;Freelancer;Fast+Learner;&center=true&width=380&height=45">
+      src="https://readme-typing-svg.herokuapp.com?lines=Senior+Software+Developer;Passionate;Fast+Learner;&center=true&width=380&height=45">
   </a>
 </p>
 <p>
   I am an experienced senior software developer who has rich experience for over 5 years in web development.
   My expertise parts are  both of frontend and backend parts with Database design.
 </p>
-
+<p><a href="https://kanmyos.github.io/">My Portfolio</a></p>
 <div align="center">
 
 </div>
@@ -79,6 +78,7 @@
       <img src="https://img.shields.io/badge/express-000000.svg?style=for-the-badge&logo=express&logoColor=white"
         alt="express" />
     </a>
+
     <a href="https://Django.com" target="_blank">
       <img src="https://img.shields.io/badge/Django-61DAFB.svg?style=for-the-badge&logo=django&logoColor=white"
         alt="Django" />
