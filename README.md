@@ -1,103 +1,235 @@
-### Hi there 👋
+<p align="center">
+    <a href="https://github.com/kanmyos/kanmyos/releases">
+        <img alt="GitHub release (latest by semver)" src="https://img.shields.io/github/v/release/kanmyos/kanmyos?color=%2360be86&label=Latest%20release&style=for-the-badge&sort=semver">
+    </a>
+    <a href="/LICENSE">
+        <img alt="GitHub" src="https://img.shields.io/github/license/kanmyos/kanmyos?color=%2360be86&style=for-the-badge">
+    </a>
+    <a href="https://github.com/kanmyos/kanmyos/graphs/contributors">
+        <img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/kanmyos/kanmyos?color=%2360be86&style=for-the-badge">
+    </a>
+    <a href="https://github.com/kanmyos/kanmyos/actions">
+        <img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/kanmyos/kanmyos/master?color=%2360be86&style=for-the-badge">
+    </a>
+    <a href="https://github.com/kanmyos/kanmyos/issues?q=is%3Aopen+is%3Aissue+label%3Arequest%3Aicon">
+        <img alt="GitHub issues by-label" src="https://img.shields.io/github/issues/kanmyos/kanmyos/request:icon?color=%2360be86&label=icon%20requests&style=for-the-badge">
+    </a>
+    <a href="https://github.com/kanmyos/kanmyos/stargazers">
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/kanmyos/kanmyos?color=%2360be86&label=github%20stars&style=for-the-badge">
+    </a>
+</p>
+<br />
+<div align="center">
+    <a href="https://github.com/kanmyos/kanmyos">
+        <img src="https://raw.githubusercontent.com/kanmyos/kanmyos/master/icons/devicon/devicon-original-wordmark.svg" alt="Devicon Logo" height="140" />
+    </a>
+    <h5 align="center">
+        devicon aims to gather all logos representing development languages and tools.
+    </h5>
+    <p align="center">
+        <a target="_blank" href="https://devicon.dev">Demo</a>
+        &middot;
+        <a target="_blank" href="https://github.com/kanmyos/kanmyos/issues/new?assignees=&labels=request%3Aicon&template=icon-request.md&title=Icon+request%3A+%5BNAME%5D">Request Icon</a>
+        &middot;
+        <a href="#contribute">Contribute</a>
+    </p>
+</div>
+
+<h2>TL;DR;</h2>
+
+```html
+<!-- in your header -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kanmyos/kanmyos@latest/devicon.min.css">
+
+<!-- in your body -->
+<i class="devicon-devicon-plain"></i>
+```
+
+<h2>Table of Contents</h2>
+<ol>
+    <li><a href="#about">About the project</a></li>
+    <li><a href="#getting-started">Getting started</a></li>
+    <li><a href="#request-icon">Requesting icon</a></li>
+    <li><a href="#contribute">Contributing</a></li>
+    <li><a href="#discord-server">Discord server</a></li>
+    <li><a href="#develop-vs-master"><code>develop</code> vs <code>master</code></a></li>
+    <li><a href="#stale-prs">Stale pull requests</a></li>
+    <li><a href="#build-yourself">Go build yourself</a></li>
+</ol>
+
+<h2 id="about">About the project</h2>
+<p>
+    Devicon aims to gather all logos representing development languages and tools.
+    Each icon comes in several versions: font/SVG, original/plain/line, colored/not colored, wordmark/no wordmark.
+    Devicon has 150+ icons. And it's growing!<br />
+</p>
+<p>
+    See the <a href="/devicon.json">devicon.json</a> or <a href="https://devicon.dev">our website</a> for complete and up to date reference of 
+    all available icons.
+</p>
+<sub>
+    All product names, logos, and brands are property of their respective owners. All company, product and service 
+    names used in this website are for identification purposes only. Use of these names, logos, and brands does not 
+    imply endorsement. Usage of these logos should be done according to the company/brand/service's brand policy.
+</sub>
+<p>
+    Thank you to our contributors and the <a href="https://icomoon.io/#home">IcoMoon app</a>. Devicon would not be possible without you.
+</p>
 
 
-LinkedIn Badge Twitter Badge Pinterest Badge
+<h2 id="getting-started">Getting started</h2>
+<p>
+    For a super fast setup go check <a href="https://devicon.dev">devicon.dev</a>.<br />
+    You can either <a href="#getting-started-svg">use the raw SVG</a> icons or our <a href="#getting-started-font">devicon font</a> (which is 
+    also available via CDN).
+</p>
 
+<h4 id="getting-started-font">Use the <code>devicon</code> font (recommended)</h4>
+<p>
+    You can install devicon as a dependency to your project either with <code>npm</code> or <code>yarn</code>:
+</p>
 
-About Me
-🚀 As a spirited entrepreneur with a rich 15-year journey in UI/UX design, I've now embraced the exciting world of full-stack development. My tech adventure started in Telecommunications Engineering and web development as a leisure pursuit. This path ignited my entrepreneurial spirit, leading to successful ventures in real estate, e-commerce, and software development, creating job opportunities for many others along the way.
+```bash
+npm install --save devicon
+yarn add devicon
+```
 
-💡 Presently, I'm steering the ship as the CTO & Co-Founder of Write Guide AI, where we innovate in AI-driven article and social media content generation, giving business owners and hobbyists the opportunity to free up their time by letting Write Guide AI write blogs and social media content for them! Simultaneously, I am the CEO & Founder Light of Twelve, a unique global gemstone and mineral enterprise. Here, I blend my love for storytelling with spirituality, tarot, astrology, crystal healing, and more, crafting compelling narratives for our audience.
+<p>
+    If you don't want to use a package manager you can also download
+    and include <a href="/devicon.min.css">devicon.min.css</a> next to the <a href="/fonts">font files</a> to your project.
+    See <a href="https://devicon.dev">devicon.dev</a> for details about how to add devicon to your project via
+    a CDN.
+</p>
+<p>
+    After setting up you just have to include the stylesheet in your header
+    to get started:
+</p>
 
-I'm at my best when tackling complex challenges in fast-paced environments, finding great satisfaction in exceeding expectations. This passion fuels my growing interest in full-stack development, adding a new dimension to my skill set. Alongside technical prowess, I bring expertise in project management, business planning, e-commerce, SEO optimization, import/export, and real estate investment.
+```html
+<link rel="stylesheet" href="devicon.min.css">
+```
 
-Join me on this journey as I continue to explore the intersection of technology, creativity, and business acumen, always aiming to push boundaries and inspire innovation.
+<p>Start using icons with <code>&lt;i&gt;</code>-tag</p>
 
+```html
+<!--  for devicon plain version -->
+<i class="devicon-devicon-plain"></i>
 
-CSS  React  HTML  JavaScript  d3js  Redux   babel  jquery  typescript  webpack  nextjs  NodeJS  handlebars  mongodb  graphql  MySQL  sequelize  Material UI  bootstrap  Git  jest  openal  canva 
-Amazon AWS Badge Cloudflare Heroku Twitter Badge Vercel
+<!--  for devicon plain version with wordmark -->
+<i class="devicon-devicon-plain-wordmark"></i>
 
-Top Langs
+<!--  for devicon plain version colored with devicon main color -->
+<i class="devicon-devicon-plain colored"></i>
 
-...& more
+<!--  for devicon plain version with wordmark colored with devicon main color -->
+<i class="devicon-devicon-plain-wordmark colored"></i>
+```
 
+<p>
+    An alternate way to use <code>devicon</code> is by copy/paste the raw SVG code
+    to your project.
+</p>
+<h4 id="getting-started-svg">Copy/paste SVG code (from the <a href="https://github.com/kanmyos/kanmyos/tree/master/icons">svg folder</a> or the <a href="https://devicon.dev">project page</a>)</h4>
 
+```html
+<!--  for devicon plain version -->
+<svg id="Devicon" class='devicon-devicon-plain' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path id="plain" fill="#60be86" d="M64,7.83H4.77L14.95,95.13l49,25,.06,0,49.07-25L123.23,7.83Zm42.77,54.86c0,.88,0,1.67-.77,2L73.25,80.44l-2.42,1.13-.27-3.15V72.23l.24-1.57,1.09-.47L95.07,59.81l-21.54-9.6L64.35,68.34,58.9,78.87l-1.22,2.27-2.05-.9L22,64.71a2.42,2.42,0,0,1-1.45-2V56.91a2.39,2.39,0,0,1,1.42-2l34-15.73,3.21-1.44v9.66l.24,1.34-1.56.7L34.45,59.79,56.3,69.42l8.05-16,6.21-12.65,1.13-2.28,1.81.91L106,54.89c.73.35.76,1.14.76,2Z"/></svg>
+```
 
-💻 Current Exciting Projects
+Add css rules in your stylesheet
+```css
+.devicon-devicon-plain {
+  max-width: 2em;
+}
 
-Write Guide AI | Ongoing development
-Write Guide AI Logo	
-At Write Guide AI, we're redefining content creation. Imagine inputting a few simple parameters – keywords, desired word count, tone, and title – and watching as our AI swiftly crafts high-quality articles up to 4000 words in under 5 minutes. Our platform extends its prowess to social media, creating posts that engage and resonate. Every piece of content is SEO-optimized, ensuring your message reaches its intended audience effectively.
+/* if you want to change the original color */
+.devicon-devicon-plain path {
+  fill: #4691f6;
+}
+```
 
-As we move forward, we're excited to integrate machine learning capabilities for even more nuanced and effective SERP analysis, competitor research, advanced keyword mapping, content suggestions, and more! Our journey is not just about creating content but shaping the future of how digital content interacts with audiences and search engines alike.
+<h4>You can also use the <code>img</code> tag and referencing an svg directly from the repo.</h4>
 
+```html
+<img src='https://cdn.jsdelivr.net/gh/kanmyos/kanmyos/icons/devicon/devicon-original.svg'>
+```
 
+<h2 id="request-icon">Requesting icon</h2>
+<p>
+    When you want to request an icon please feel free to create an issue. See our <a href="https://github.com/kanmyos/kanmyos/wiki/Requesting-an-Icon">Wiki</a> for more information.
+</p>
 
-Light of Twelve | Established e-commerce platform
-A comprehensive worldwide e-commerce platform for gemstone and spirituality enthusiasts with two international warehouses. Built with Shopify and integrates with various payment gateways and shipping providers.
+<h2 id="contribute">Contributing</h2>
+<p>
+    We are happy with every contribution, whether it's new icons, features, or maintainers. Please have a look at our <a href="https://github.com/kanmyos/kanmyos/wiki">Wiki</a> to see how you can contribute to this project.
+</p>
 
-Development Projects for Light of Twelve
+<h2 id="discord-server">Discord server</h2>
+<p>
+We are running a Discord server. You can go here to talk, discuss, and more with the maintainers and other people, too. Here's the invitation: https://discord.gg/hScy8KWACQ.
+<b>Note that the Discord server is unofficial, and Devicons is still being maintained via GitHub.</b>
+</p>
 
-Tarot Reading App:
-An intuitive and personalized tarot reading application that provides insights and guidance for users. It utilizes machine learning algorithms and a vast database of tarot interpretations generated based on users' input questions.
-Birthchart Generator & Daily Horoscopes
-A birthchart and horoscope generator that provides real-time horoscope data, birth chart calculations, and compatibility analysis. Designed to be seamlessly integrated with the Shopify store.
-Write Guide AI Logo
+<h2 id="develop-vs-master"><code>develop</code> vs <code>master</code></h2>
+<p>
+All official releases shall be in <code>master</code>. Any updates in between (icons, features, etc.) will be kept in <code>develop</code>. 
+</p>
+<b><code>develop</code> contains:</b>
+<ul>
+    <li>
+        Latest SVGs (non-optimized).
+    </li>
+    <li>
+        No icons for the latest SVGs. These will be build at every release.
+    </li>
+    <li>
+        Experimental changes.
+    </li>
+</ul>
+<b><code>master</code> contains:</b>
+<ul>
+    <li>
+        Latest official release, which contains the SVGs and icons.
+    </li>
+    <li>
+        Official tested changes.
+    </li>
+</ul>
 
+<h2 id="stale-prs">Stale pull requests</h2>
+<p>
+After a pull request has been open for over 30 days with no activity or response from the author, it'll be automatically marked as stale. We might fork your changes and merge the changes ourselves. Since GitHub tracks contributions by commits, you will be credited.
+</p>
 
-Astrology API | Ongoing Development
-An astrology API that provides real-time horoscope data, birth chart calculations, and compatibility analysis. Designed to integrate seamlessly with websites or applications for other business owners and hobbyists to use in their digital platforms, offering their customers top-of-the-line, accurate results.
+<h2 id="build-yourself">Go build yourself</h2>
+<p>
+    Feel free to follow those steps when you want to build the font
+    by yourself.
+</p>
+<h5>Prerequisites</h5>
+<p>Install gulp (and gulp plugins)</p>
 
+```bash
+npm install
+```
 
-GitHub Streak
+<h5>Build the font and export stylesheet</h5>
+Open <a href="https://icomoon.io/app/#/select">icomoon.io</a> and import <a href="/icomoon.json">icomoon.json</a>. Choose <i>yes</i> when being asked
+if you would like to restore the settings stored in the configuration file.
 
+The next step is to click on <b>Generate font</b> and download the resulting archive. Extract the contents and you will find a <a href="/fonts">fonts</a> directory next to a <code>style.css</code>. Replace the contents of the <code>fonts</code> folder, rename <code>style.css</code> as <a href="/devicon.css">devicon.css</a> and follow the next step to build the final stylesheet.
 
-Feel free to explore these projects and provide any feedback or suggestions!
+<h5>Build and minify stylesheet</h5>
+<p>
+    Run the following command to build the resulting file <code>devicon.min.css</code>
+</p>
 
+```bash
+npm run build-css
+```
 
-🛠️ Skills
-🔧 Throughout my journey, I've acquired a diverse set of skills:
-
-Frontend: HTML, CSS, JavaScript, React, Typescript, jQuery
-Backend: Next.js, Node.js, Express.js, MongoDB (Mongoose), MySQL (Sequelize), API Creation, GraphQL, Handlebars, Amazon Web Services (Lambda, Cloudfront, S3, SQS), Webpack (creating PWAs), C, C#, C++
-Libraries: Bootstrap, Material UI, Prime React, Materialize, Owl Carousel, jQuery FancyBox
-Third Party APIs: OpenAI, Google Map Services
-Common Packages: D3, Chart.js, Editor.js
-Design: UI/UX, Lightroom, Photoshop, Canva, Midjourney, Dall-E
-Business: E-commerce, Project Management, Business Planning, Financial Management, Forecasting, Marketing
-Other: Import/Export, Real Estate Investment, Copywriting, SEO Expertise, SEMrush, SurferSEO, Google Analytics, Google Search Console
-...& more
-
-📫 Contact
-📧 Want to collaborate or have any questions? Feel free to reach out to me through the following:
-
-Email: info@lightoftwelve.com
-LinkedIn: Victoria Alawi
-Let's connect and create something awesome together!
-
-✍️ Blog
-📝 I love sharing my thoughts and insights on my blogs. Here are two captivating blogs from my e-commerce business that not only provide valuable information but also help drive organic traffic through SEO strategies:
-
-Learning About Tarot: "Tarot Card Reading: Unlocking the Secrets of the Arcana."
-The Healing Crystal Guide: "Harnessing the Power of Crystals: Exploring the Healing Energies, Science and History of these fascinating gemstones."
-Take a look and let me know your thoughts!
-
-🎉 Fun Fact
-⚡️ Fun Fact: Did you know that crystals have been used for centuries for their healing properties and spiritual significance? Different crystals are believed to possess unique energies and can be used for various purposes, such as promoting balance, enhancing focus, or attracting positive energy. From ancient civilizations to modern practices, crystals continue to captivate us with their beauty and metaphysical properties.
-
-
-
-<!--
-**kanmyos/kanmyos** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<br />
+<div align="center">
+    <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+    <img src="https://forthebadge.com/images/badges/built-by-developers.svg" />
+</div>
