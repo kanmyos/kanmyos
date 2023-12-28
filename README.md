@@ -8,7 +8,7 @@
   </a>
 </p>
 <p>
-  I am an experiencd senior software developer who has rich experience for over 5 years in web development.
+  I am an experienced senior software developer who has rich experience for over 5 years in web development.
   My expertise parts are  both of frontend and backend parts with Database design.
 </p>
 
